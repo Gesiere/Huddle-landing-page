@@ -1,0 +1,154 @@
+:root{
+    --primary-violet-color: hsl(257, 40%, 49%);
+    --primary-magnenta-color: hsl(300, 69%, 71%);
+    --font-family-heading: 'Open Sans', sans-serif;
+    
+    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--primary-violet-color);
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.logo img{
+    width: 200px;
+}
+
+.main-section{
+    margin: 0 auto;
+    padding: 2rem 0rem;
+    max-width: 500px;
+    height: 100vh;
+    
+    
+    
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 6rem;
+    
+}
+
+.illustration-section img{
+    width: 30rem;
+}
+
+.main-content .page-section{
+    margin: 5rem 0;
+    color: #fff;
+}
+
+.page-section h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 3.7rem;
+    font-family: var(--font-family-heading);
+}
+.page-section p{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 1rem 0;
+    font-size: 1.36rem;
+    font-weight: 300;
+    line-height: 2rem;
+    
+}
+
+.page-section .btn{
+    
+    padding: 1rem 6rem;
+    margin: 1rem 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    color: var(--primary-violet-color);
+    cursor: pointer;
+}
+
+.page-section .btn:hover{
+    background-color: var(--primary-magnenta-color);
+    color: #fff;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons i{
+    border:  1px solid #fff;
+    border-radius: 2rem;
+    margin: 0 1rem;
+    padding: .5rem;
+    color: #fff;
+}
+
+
+
+.social-icons i:hover{
+    border-color: var(--primary-magnenta-color);
+    color: var(--primary-magnenta-color);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 800px){
+    body{
+        background-image: url(/images/bg-desktop.svg);
+        
+    }
+    .main-section{
+        max-width: 1200px;
+    }
+
+    .main-content{
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .main-content .page-section{
+        margin: 3rem;
+    }
+
+    .illustration-section img{
+        width: 40rem;
+    }
+
+
+    .page-section h1{
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 3.5rem;
+    }
+    .page-section p{
+        width: 100%;
+        font-size: .93rem;
+    }
+
+    .main-section .btn{
+        padding: 1rem 4rem;
+    }
+    .social-icons{
+        justify-content: flex-end;
+        
+    }
+}
