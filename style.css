@@ -154,8 +154,13 @@ body{
 }
 
 @media (max-width: 550px){
+    body{
+        background-image: url(/images/bg-mobile.svg);
+        
+    }
+
+    
     .main-section{
-        border: 2px solid red;
         margin: 0 auto;
         max-width: 375px;
     }
@@ -163,7 +168,7 @@ body{
     
 
     .illustration-section img{
-        width:23rem;
+        width:21rem;
     }
 
     .main-content h1{
