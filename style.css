@@ -152,3 +152,27 @@ body{
         
     }
 }
+
+@media (max-width: 550px){
+    .main-section{
+        border: 2px solid red;
+        margin: 0 auto;
+        max-width: 375px;
+    }
+
+    
+
+    .illustration-section img{
+        width:23rem;
+    }
+
+    .main-content h1{
+        font-size: 1.9rem;
+        line-height: 2.65rem;
+        font-weight: 600;
+    }
+
+    .main-content p{
+        font-size: 1.02rem;
+    }
+}
